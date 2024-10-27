@@ -82,10 +82,10 @@ Existem várias situações especiais no xadrez:
 - Uma captura ocorre quando uma peça adversária se move para a casa ocupada por outra peça.
 - O roque é uma jogada especial que envolve o rei e uma torre. O rei move duas casas em direção à torre, e a torre move-se para o lado do rei. O roque só pode ser efetuado se o rei e a torre não se moveram até ao momento, e se não existirem peças entre o rei e a torre.
 - O *en passant* é uma jogada especial que envolve peões. Se um peão se mover duas casas, e ficar ao lado de um peão adversário, este pode capturar o peão como se este tivesse movido apenas uma casa.
-- A promoção de peões é uma jogada especial que envolve peões. Se um peão chegar à última linha do tabuleiro, é promovido para uma rainha. O índice da peça promovida é o próximo disponível no conjunto atual de rainhas.
+- A promoção de peões é uma jogada especial que envolve peões. Se um peão chegar à última linha do tabuleiro, é promovido para uma torre, cavalo, bispo ou rainha. Neste projeto a promoção é automaticamente feita para uma rainha. O índice da peça promovida é o próximo disponível no conjunto atual de rainhas do jogador.
 - Cheque: um rei está em cheque quando está sob ameaça de captura por uma peça adversária. O jogador em cheque deve mover o rei para uma casa segura, capturar a peça que ameaça o rei, ou bloquear a linha de ataque da peça adversária.
-- Xeque-mate: um rei está em xeque-mate quando está em cheque, e não existem jogadas possíveis para o rei que o coloquem em segurança.
-- Empate: o jogo termina em empate por acordo entre os jogadores, por repetição de jogadas, ou por falta de material para efetuar um xeque-mate.
+- Xeque-mate: um rei está em xeque-mate quando está em cheque, e não existem jogadas possíveis que o coloquem em segurança. O jogo termina com uma vitória para o adversário.
+- Empate: o jogo termina em empate por acordo entre os jogadores, por repetição de jogadas, ou por falta de material para efetuar um xeque-mate. Neste projeto, o empate só vai ser considerado por acordo entre os jogadores.
 
 #### Operações especiais
 
@@ -93,8 +93,8 @@ Neste projeto, as peças do jogo têm ainda a possibilidade de efetuar operaçõ
 
 - Peão (P): Uma vez durante o jogo, o peão pode andar uma casa para trás.
 - Torre (R): Uma vez durante o jogo, a torre pode capturar duas peças adversárias numa única jogada, desde que estas estejam numa linha reta, e a primeira peça esteja a uma casa de distância da torre.
-- Cavalo (H): Se o cavalo não estiver encostado a qualquer outra peça, pode avançar 4 casas na mesma direção, horizontal, vertical, ou diagonal, saltando por cima de qualquer peça, e eventualmente capturando a peça na casa de destino (é um movimento em linha reta, e não em L).
-- Bispo (B): Uma vez durante o jogo, o bispo captura todos os peões adversários numa área de 3x3 casas, centrada no bispo. O bispo não se move, e as peças são capturadas automaticamente.
+- Cavalo (H): Se o cavalo não estiver encostado a qualquer outra peça, pode avançar 4 casas na mesma direção, horizontal, vertical, ou diagonal, saltando por cima de qualquer peça, e eventualmente capturando a peça na casa de destino (é um movimento em linha reta, e não em L). Esta operação pode acontecer várias vezes no jogo.
+- Bispo (B): Uma vez durante o jogo, o bispo captura todos os peões adversários numa área de 3x3 casas, centrada no bispo. O bispo não se move, e as peças são capturadas.
 - Rainha (Q): A qualquer momento do jogo, a rainha pode trocar de posição com o rei, desde que o rei não esteja em cheque, e a troca não coloque o rei em cheque. Esta operação pode acontecer várias vezes no jogo.
 
 ## Instruções
