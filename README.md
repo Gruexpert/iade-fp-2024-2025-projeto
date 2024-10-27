@@ -40,7 +40,7 @@ Este projeto pretende a implementação de uma variante do Xadrez.
 
 No xadrez, dois jogadores movem peças num tabuleiro de 8x8 casas, com o objetivo de capturar o rei do adversário. O jogo termina quando um dos reis é capturado, ou quando um dos jogadores não tem mais jogadas possíveis. É também possível terminar o jogo por desistência de um jogador, ou com um empate, por acordo entre os jogadores. Não existe controlo de repetição de jogadas.
 
-O tabuleiro de xadrez é composto por 64 casas dispostas em 8 linhas e 8 colunas. Cada jogador tem 16 peças: um rei (K), uma rainha(Q), duas torres (R), dois cavalos (H), dois bispos (B), e oito peões (P). Existem dois tipos de peças, um por jogador: as brancas (W), e as pretas (B). Cada peça tem também um índice inteiro positivo sequência, a começar em 1 (um), que permite distinguir peças do mesmo tipo.
+O tabuleiro de xadrez é composto por 64 casas dispostas em 8 linhas e 8 colunas. Cada jogador tem 16 peças: um rei (K), uma rainha(Q), duas torres (R), dois cavalos (H), dois bispos (B), e oito peões (P). Existem dois tipos de peças, um por jogador: as brancas (W), e as pretas (B). Cada peça tem também um índice inteiro positivo sequência, a começar em 1 (um), que permite distinguir peças do mesmo tipo. O símbolo de cada peça é composto por três símbolos: um prefixo com a cor da peça (W, B), a letra correspondente à peça (P, R, H, B, Q, K), e um sufixo com o índice (valor inteiro, maior que zero, sequencial no conjunto de peças do mesmo tipo).
 
 No início do jogo, as peças são distribuídas da seguinte forma:
 
